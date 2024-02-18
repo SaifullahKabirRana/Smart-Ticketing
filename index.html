@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tata Paribahan</title>
+    <!-- Daisy UI and Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom css  -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/font.css">
+
+
+</head>
+
+<body>
+    <header class="container mx-auto">
+        <!-- navbar -->
+        <nav class="my-4 lg:my-12 raleway-font">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[#030712B3] font-medium text-lg">
+                            <li class=""><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-[#030712] font-extrabold text-4xl">Tata-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-[#030712B3] font-medium text-lg">
+                        <li class=""><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-3 lg:gap-6 ">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a class="btn bg-[#1DD1001A] text-[#1DD100] font-bold text-xl px-7 my-4 gap-2">Bus
+                        <span><img src="images/bus-icon.png" alt=""> </span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- banner section -->
+        <section
+            class="rounded-[32px] bg-[url(images/banner.png)] bg-no-repeat bg-cover h-[77vh] flex justify-center   ">
+            <div class="text-center ">
+                <h2 class="text-white raleway-font font-extrabold text-6xl mt-36 ">End-to-End Travel with </h2>
+                <h2 class="text-[#1DD100] font-extrabold text-6xl mt-6">Tata Paribahan</h2>
+                <p class="text-white text-[18px] inter-font font-normal w-[690px] mt-10 mb-12 ">Yes, you can run unit
+                    tests and view the results directly within the app. The
+                    integrated testing features allow for a streamlined .</p>
+                <button id="buy-ticket"
+                    class="btn raleway-font border-none bg-[#1DD100] text-black px-8  text-xl font-bold">Buy
+                    Ticket</button>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- offer section -->
+        <section class="container mx-auto">
+            <div>
+                <h2 class="text-center text-[#030712] text-[40px] raleway-font font-bold mt-28 mb-12">Best offers for
+                    you</h2>
+            </div>
+            <!-- coupon 1 -->
+            <div class="flex flex-row gap-6">
+                <div class="flex-1">
+                    <div class="flex justify-between items-center bg-[#FFBF0F] rounded-3xl p-12 ">
+                        <div class="inter-font">
+                            <h2 class="card-title text-[#030712CC]  text-[40px] font-black">15% OFF</h2>
+                            <h3 class="text-[#030712CC] font-semibold text-xl my-4">on your next purchase</h3>
+                            <p class="text-[#03071280] font-medium text-lg">use by January 2024</p>
+                        </div>
+                        <div class="">
+                            <div class="raleway-font">
+                                <h2 class=" text-[#030712CC] text-[32px] font-bold">NEW15</h2>
+                                <p class="text-[#03071280] font-medium text-xl">Coupon Code</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" relative flex justify-center  ml-[20%]">
+                        <img class=" absolute -top-[216px] " src="images/cupon-devider.png" alt="">
+                    </div>
+                </div>
+                <!-- coupon 2 -->
+                <div class="flex-1">
+                    <div class="flex justify-between items-center bg-[#F78C9C] rounded-3xl p-12 ">
+                        <div class="inter-font">
+                            <h2 class="card-title text-[#030712CC]  text-[40px] font-black">20% OFF</h2>
+                            <h3 class="text-[#030712CC] font-semibold text-xl my-4">on your next purchase</h3>
+                            <p class="text-[#03071280] font-medium text-lg">use by January 2024</p>
+                        </div>
+                        <div class="">
+                            <div class="raleway-font">
+                                <h2 class=" text-[#030712CC] text-[32px] font-bold">Couple 20</h2>
+                                <p class="text-[#03071280] font-medium text-xl">Coupon Code</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" relative flex justify-center  ml-[20%]">
+                        <img class=" absolute -top-[216px] " src="images/cupon-devider.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-16 ">
+                <button class="btn bg-white text-[#1DD100] border border-[#1DD100] px-7 text-xl raleway-font font-bold ">See All Offers</button>
+            </div>
+        </section>
+
+
+    </main>
+</body>
+
+</html>
