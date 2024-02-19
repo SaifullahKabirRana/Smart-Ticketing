@@ -50,7 +50,7 @@
                 </div>
                 <div class="navbar-end gap-3 lg:gap-6 ">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <a class="btn bg-[#1DD1001A] text-[#1DD100] font-bold text-xl px-7 my-4 gap-2">Bus
+                    <a href="#ticket-section" class="btn bg-[#1DD1001A] text-[#1DD100] font-bold text-xl px-7 my-4 gap-2">Bus
                         <span><img src="images/bus-icon.png" alt=""> </span>
                     </a>
                 </div>
@@ -66,9 +66,7 @@
                 <p class="text-white text-[18px] inter-font font-normal w-[690px] mt-10 mb-12 ">Yes, you can run unit
                     tests and view the results directly within the app. The
                     integrated testing features allow for a streamlined .</p>
-                <button id="buy-ticket"
-                    class="btn raleway-font border-none bg-[#1DD100] text-black px-8  text-xl font-bold">Buy
-                    Ticket</button>
+                <a href="#ticket-section" class="btn raleway-font border-none bg-[#1DD100] text-black px-8  text-xl font-bold">Buy Tickets</a>
             </div>
         </section>
     </header>
@@ -128,7 +126,7 @@
 
         <!-- ticket section -->
 
-        <section class="bg-[#F7F8F8] border-t-2 border-[#1DD100] border-rounded mt-28 ">
+        <section id="ticket-section" class="bg-[#F7F8F8] border-t-2 border-[#1DD100] border-rounded mt-28 ">
             <div class="text-center  ">
                 <h2 class="mt-24 text-[40px] raleway-font font-bold text-[#030712]">Tata Paribahan</h2>
                 <p class="mt-6 text-[#03071299] text-[18px] inter-font text-center ">Yes, you can run unit tests and
@@ -327,18 +325,69 @@
                                 <p class="">Total Price</p>
                                 <p>BDT <span id="">0</span></p>
                             </div>
-                            <div class=" input input-bordere-none rounded-xl w-full h-16 flex justify-between items-center mt-4 mb-6">
-                                <input  type="text"  placeholder="Have any coupon? " class="" />
-                                <button class=" btn rounded-xl  h-12   bg-green-500 text-base font-semibold text-white -mr-2" disabled>Apply</button>
+                            <div
+                                class=" input input-bordere-none rounded-xl w-full h-16 flex justify-between items-center mt-4 mb-6">
+                                <input type="text" placeholder="Have any coupon? " class="" />
+                                <button
+                                    class=" btn rounded-xl  h-12   bg-green-500 text-base font-semibold text-white -mr-2"
+                                    disabled>Apply</button>
                             </div>
-                            <div class="flex justify-between font-medium text-base">
-                               <h4>Grand Total</h4> 
-                               <h4>BDT 1100</h4> 
+                            <div class="flex justify-between text-[#030712] text-[18px] font-medium">
+                                <h4>Grand Total</h4>
+                                <h4>BDT <span>0</span></h4>
                             </div>
                         </div>
 
+                        <!-- input field -->
+                        <form class="inter-font space-y-6 mt-6">
+                            <div class="flex flex-col gap-4">
+                                <label for="" class="text-[18px] text-[#030712] font-semibold">Passenger
+                                    Name<sup>*</sup></label>
+                                <input class="border-2 border-[#0307121A] p-4 rounded-2xl" type="text"
+                                    placeholder="Enter your name">
+                            </div>
+                            <div class="flex flex-col gap-4">
+                                <label for="" class="text-[18px] text-[#030712] font-semibold">Phone
+                                    Number<sup>*</sup></label>
+                                <input id="submitInfo" class="border-2 border-[#0307121A] p-4 rounded-2xl" type="number"
+                                    placeholder="Enter your phone number">
+                            </div>
+                            <div class="flex flex-col gap-4">
+                                <label for=""
+                                    class="text-[18px] text-[#030712] font-semibold">E-mail<sup>*</sup></label>
+                                <input class="border-2 border-[#0307121A] p-4 rounded-2xl" type="email"
+                                    placeholder="Enter your email id">
+                            </div>
+                        </form>
 
-
+                        <div class="mt-10 ">
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button id="modalbutton" disabled class="btn w-full bg-[#1DD100] text-2xl text-white"
+                                onclick="my_modal_5.showModal()">Next</button>
+                            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                                <div class="modal-box">
+                                    <div class="flex items-center justify-center mb-8">
+                                        <img src="images/success.png" alt="">
+                                    </div>
+                                    <h1 class="font-bold text-2xl text-[#27AE60] text-center">SUCCESS</h1>
+                                    <h3 class="font-bold text-lg">Thank you for Booking Our Bus Seats.
+                                        We are working hard to find the best service and deals for you</h3>
+                                    <p class="py-4">Shortly you will find a confirmation in your email.</p>
+                                    <div class="modal-action">
+                                        <form class="w-full" method="dialog">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button
+                                                class="btn bg-[#27AE60] w-full text-xl text-white font-bold">Continue</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
+                        </div>
+                        <!-- term condition -->
+                        <div class="flex flex-col lg:flex-row justify-between lg:px-32 mt-4 text-center">
+                            <a class="underline" href="">Terms and Conditions</a>
+                            <a class="underline" href="">Cancellation Policy</a>
+                        </div>
 
 
                     </div>
