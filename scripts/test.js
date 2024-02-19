@@ -1,11 +1,11 @@
 // -----Common function-------
 
-function get_element_by_id(elementID) { //getElement
+function get_element_by_id(elementID) { 
     return document.getElementById(elementID);
 }
 
 
-function set_element_by_id(elementID, value) { //setElement
+function set_element_by_id(elementID, value) { 
     document.getElementById(elementID).innerText = value;
 }
 
@@ -34,7 +34,7 @@ let counter = 0;
 let ticket_total = 0;
 let check_arr = [];  //seatAdd
 let condi_arr = [];
-let seat_items = document.getElementsByClassName('sit-button');
+let seat_items = document.getElementsByClassName('seat-button');
 
 for (const seat of seat_items) {
     seat.addEventListener('click', function (e) {
