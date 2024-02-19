@@ -59,7 +59,7 @@
 
         <!-- banner section -->
         <section
-            class="rounded-[32px] bg-[url(images/banner.png)] bg-no-repeat bg-cover h-[77vh]  flex justify-center   ">
+            class="rounded-[32px] bg-[linear-gradient(180deg,#03071280,#03071200),url(./images/banner.png)] bg-no-repeat bg-cover h-[77vh]  flex justify-center   ">
             <div class="text-center ">
                 <h2 class="text-white raleway-font font-extrabold text-6xl mt-36 ">End-to-End Travel with </h2>
                 <h2 class="text-[#1DD100] font-extrabold text-6xl mt-6">Tata Paribahan</h2>
@@ -166,12 +166,12 @@
                                 <h2 class="raleway-font text-[18px] text-[#030712] font-semibold">Dhaka - Sylhet</h2>
                             </div>
                             <!-- Departure Time -->
-                            <div class=" border-2 border-dashed my-6"></div>
+                            <div class=" border border-dashed my-6"></div>
                             <div class="flex justify-between">
                                 <h3 class="raleway-font text-[18px] text-[#03071299] font-semibold">Departure Time</h3>
                                 <h2 class="raleway-font text-[18px] text-[#030712] font-semibold">9:00 PM</h2>
                             </div>
-                            <div class=" border-2 border-dashed  my-6"></div>
+                            <div class=" border border-dashed  my-6"></div>
 
                             <div class=" flex flex-row justify-between ">
                                 <div class="bg-[#0307120D] rounded-xl w-[30%] text-center">
@@ -206,13 +206,13 @@
             <!-- seat section  -->
             <div class="container mx-auto mt-7">
                 <!-- seat selected -->
-                <div class="bg-white rounded-3xl p-10">
+                <div class="bg-white rounded-3xl p-10 flex flex-row">
                     <!-- available seat -->
-                    <div class="">
+                    <div class="w-1/2 px-8">
                         <div>
                             <h2 class="text-[#030712] text-2xl raleway-font font-semibold">Select Your Seat</h2>
                         </div>
-                        <div class=" border-2 border-dashed  my-6"></div>
+                        <div class=" border border-dashed  my-6"></div>
                         <div class="flex justify-between">
                             <div class="flex flex-row  gap-2">
                                 <img src="images/seat-gray.png" alt="">
@@ -224,12 +224,107 @@
                                 <h2 class="text-[18px] inter-font font-medium text-[#1DD100]">Selected</h2>
                             </div>
                         </div>
-                        <div class=" border-2 border-dashed  my-6"></div>
-
-
+                        <div class="border border-dashed my-6"></div>
+                        <div class="flex justify-end ">
+                            <img class="btn w-[100px] h-[60px]" src="images/wheel.png" alt="">
+                        </div>
+                        <!-- seat count -->
+                        <div id="seat-count" class="mt-6">
+                            <div class="flex justify-around  mb-6  ">
+                                <button class="">A</button>
+                                <button id="A1" class="btn seat-button">A1</button>
+                                <button id="A2" class="btn seat-button">A2</button>
+                                <button id="A3" class="btn seat-button">A3</button>
+                                <button id="A4" class="btn seat-button">A4</button>
+                            </div>
+                            <div class="flex justify-around  mb-6  ">
+                                <button class="">B</button>
+                                <button id="A1" class="btn seat-button">B1</button>
+                                <button id="A2" class="btn seat-button">B2</button>
+                                <button id="A3" class="btn seat-button">B3</button>
+                                <button id="A4" class="btn seat-button">B4</button>
+                            </div>
+                            <div class="flex justify-around  mb-6  ">
+                                <button class="">C</button>
+                                <button id="A1" class="btn seat-button">C1</button>
+                                <button id="A2" class="btn seat-button">C2</button>
+                                <button id="A3" class="btn seat-button">C3</button>
+                                <button id="A4" class="btn seat-button">C4</button>
+                            </div>
+                            <div class="flex justify-around  mb-6  ">
+                                <button class="">D</button>
+                                <button id="A1" class="btn seat-button">D1</button>
+                                <button id="A2" class="btn seat-button">D2</button>
+                                <button id="A3" class="btn seat-button">D3</button>
+                                <button id="A4" class="btn seat-button">D4</button>
+                            </div>
+                            <div class="flex justify-around  mb-6  ">
+                                <button class="">E</button>
+                                <button id="A1" class="btn seat-button">E1</button>
+                                <button id="A2" class="btn seat-button">E2</button>
+                                <button id="A3" class="btn seat-button">E3</button>
+                                <button id="A4" class="btn seat-button">E4</button>
+                            </div>
+                            <div class="flex justify-around  mb-6  ">
+                                <button class="">F</button>
+                                <button id="A1" class="btn seat-button">F1</button>
+                                <button id="A2" class="btn seat-button">F2</button>
+                                <button id="A3" class="btn seat-button">F3</button>
+                                <button id="A4" class="btn seat-button">F4</button>
+                            </div>
+                            <div class="flex justify-around  mb-6  ">
+                                <button class="">G</button>
+                                <button id="A1" class="btn seat-button">G1</button>
+                                <button id="A2" class="btn seat-button">G2</button>
+                                <button id="A3" class="btn seat-button">G3</button>
+                                <button id="A4" class="btn seat-button">G4</button>
+                            </div>
+                            <div class="flex justify-around  mb-6  ">
+                                <button class="">H</button>
+                                <button id="A1" class="btn seat-button">H1</button>
+                                <button id="A2" class="btn seat-button">H2</button>
+                                <button id="A3" class="btn seat-button">H3</button>
+                                <button id="A4" class="btn seat-button">H4</button>
+                            </div>
+                            <div class="flex justify-around  mb-6  ">
+                                <button class="">I</button>
+                                <button id="A1" class="btn seat-button">I1</button>
+                                <button id="A2" class="btn seat-button">I2</button>
+                                <button id="A3" class="btn seat-button">I3</button>
+                                <button id="A4" class="btn seat-button">I4</button>
+                            </div>
+                            <div class="flex justify-around  mb-6  ">
+                                <button class="">J</button>
+                                <button id="A1" class="btn seat-button">J1</button>
+                                <button id="A2" class="btn seat-button">J2</button>
+                                <button id="A3" class="btn seat-button">J3</button>
+                                <button id="A4" class="btn seat-button">J4</button>
+                            </div>
+                        </div>
                     </div>
+                    <div class="h-[1070px] w-[2px] border border-dashed"></div>
                     <!-- passenger info -->
-                    <div>
+                    <div class="w-1/2 px-8 inter-font">
+                        <div>
+                            <h2 class="text-[#030712] text-2xl raleway-font font-semibold">Select Your Seat</h2>
+                        </div>
+                        <div class=" border border-dashed  my-6"></div>
+                        <div class="">
+                            <div class="flex justify-between mb-2">
+                                <p class="text-[18px] text-[#030712] font-medium">
+                                    Seat
+                                    <sup id=""
+                                        class="bg-[#1DD100] text-white text-[12px] px-3 py-1 rounded-3xl font-bold">0</sup>
+                                </p>
+                                <p class="text-[18px] text-[#030712] font-medium">Class</p>
+                                <p class="text-[18px] text-[#030712] font-medium">Price</p>
+                            </div>
+                        </div>
+                        <div class="border border-dashed my-6"></div>
+                        <ul id="select-ticket"></ul>
+                        <hr>
+                        
+
 
                     </div>
 
