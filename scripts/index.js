@@ -19,45 +19,43 @@ function create_items(seatInner, ticketPrice) {
 }
 
 
-// const seatItem = document.getElementsByClassName("seat-button");
 let counter = 0;
-let ticket_total = 0;
-let check_arr = []; 
-let condi_arr = [];
-let seat_items = document.getElementsByClassName('seat-button');
+let totalTickets = 0;
+let addSeat = []; 
+let seatItems = document.getElementsByClassName('seat-button');
 
-for (const seat of seat_items) {
+for (const seat of seatItems) {
     seat.addEventListener('click', function (e) {
         
         if (counter < 4) {
-            if (check_arr.includes(seat)) {
+            if (addSeat.includes(seat)) {
                 alert("You can't select one seat more time.")
                 return;
             }
             else {
                 counter += 1;
-                ticket_total += parseInt(get_element_by_id('seat-price').innerText);
+                totalTickets += parseInt(get_element_by_id('seat-price').innerText);
                 let seat_available = parseInt(get_element_by_id('available-seat').innerText);
                 set_element_by_id('available-seat', seat_available - 1);
 
                 // total seat
-                set_element_by_id('total-price', ticket_total);
-                set_element_by_id('grand-total', ticket_total);
+                set_element_by_id('total-price', totalTickets);
+                set_element_by_id('grand-total', totalTickets);
 
                 // seat background color
-                e.target.classList.add('bg-[#1DD100]')
+                e.target.classList.add('bg-[#1DD100]');
 
                 // seat selected
-                set_element_by_id('selected-seat', counter)
+                set_element_by_id('selected-seat', counter);
 
                 // create seat price
                 create_items(seat.innerText, get_element_by_id('seat-price').innerText);
             }
         }
         else {
-            alert("You can't select more than 4 ticket")
+            alert("You can't select more than 4 ticket");
         }        
-        check_arr.push(seat);
+        addSeat.push(seat);
     })
 }
 
@@ -73,19 +71,19 @@ get_element_by_id('couponInput').addEventListener('keyup', function () {
 
 function couponApply() {
     let userInput = get_element_by_id('couponInput').value;
-    const coupon_1 = get_element_by_id("coupon-1").innerText;
-    const coupon_2 = get_element_by_id("coupon-2").innerText;
+    const coupon1 = get_element_by_id("coupon-1").innerText;
+    const coupon2 = get_element_by_id("coupon-2").innerText;
 
-    if (userInput === coupon_1) {
-        let discount1 = ticket_total * 0.15;
-        set_element_by_id('grand-total', ticket_total - discount1);
+    if (userInput === coupon1) {
+        let discount1 = totalTickets * 0.15;
+        set_element_by_id('grand-total', totalTickets - discount1);
         set_element_by_id('discount-price',discount1)
         get_element_by_id('input-filed').classList.add("hidden");
         get_element_by_id('discount').classList.remove("hidden");
     }
-    else if (userInput === coupon_2) {
-        let discount2 = ticket_total * 0.20;
-        set_element_by_id('grand-total', ticket_total - discount2);
+    else if (userInput === coupon2) {
+        let discount2 = totalTickets * 0.20;
+        set_element_by_id('grand-total', totalTickets - discount2);
         set_element_by_id('discount-price', discount2)
         get_element_by_id('input-filed').classList.add("hidden");
         get_element_by_id('discount').classList.remove("hidden");
@@ -96,6 +94,6 @@ function couponApply() {
 }
 
 
-get_element_by_id('submitInfo').addEventListener('keyup', function () {
-    get_element_by_id('modalbutton').removeAttribute("disabled");
+get_element_by_id('submit-info').addEventListener('keyup', function () {
+    get_element_by_id('modal-button').removeAttribute("disabled");
 })
